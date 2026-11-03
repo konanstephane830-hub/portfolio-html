@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konan Stephane - Portfolio</title>
+    <style>
+        body{font-family:Arial,sans-serif;margin:0;line-height:1.6;background:#f4f4f4;color:#333}
+        header{background:#0a192f;color:white;padding:1rem 0;position:sticky;top:0;z-index:10}
+        nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto;padding:0 20px}
+        nav ul{display:flex;list-style:none;gap:20px}
+        nav a{color:white;text-decoration:none;font-weight:bold}
+        nav a:hover{color:#64ffda}
+        main{max-width:1100px;margin:auto;padding:20px}
+        section{background:white;margin:20px 0;padding:25px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+        h2{color:#0a192f;border-bottom:2px solid #64ffda;padding-bottom:10px}
+        table{width:100%;border-collapse:collapse;margin:15px 0}
+        th,td{border:1px solid #ddd;padding:10px;text-align:left}
+        th{background:#0a192f;color:white}
+        .btn{background:#0a192f;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer}
+        form input,form textarea,form select{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:4px;box-sizing:border-box}
+        footer{background:#0a192f;color:white;text-align:center;padding:20px;margin-top:20px}
+        .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+        @media(max-width:700px){.grid{grid-template-columns:1fr} nav ul{flex-direction:column}}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>KS Portfolio</h1>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#travail">Travail</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <article>
+                <p>Bonjour, je suis <strong>Konan Stephane</strong>, développeur web passionné basé à Abidjan, Côte d'Ivoire.</p>
+                <div class="grid">
+                    <div>
+                        <h3>Vidéo de présentation</h3>
+                        <video width="100%" controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3>Audio</h3>
+                        <audio controls style="width:100%;margin-top:40px">
+                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        </audio>
+                        <p><em>Message vocal de bienvenue</em></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="apropos">
+            <h2>À propos</h2>
+            <article>
+                <p>Développeur FullStack en formation chez GoMyCode.</p>
+                <h3>Mes compétences :</h3>
+                <ul>
+                    <li>HTML5 / CSS3 - Balises sémantiques</li>
+                    <li>JavaScript</li>
+                    <li>Git & GitHub</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </article>
+        </section>
+        <section id="travail">
+            <h2>Travail</h2>
+            <article>
+                <table>
+                    <thead><tr><th>Projet</th><th>Description</th><th>Lien</th></tr></thead>
+                    <tbody>
+                        <tr><td>Learn Git</td><td>Gestion de version avec Git</td><td><a href="https://github.com/konanstephane830-hub/learn_git" target="_blank">Voir</a></td></tr>
+                        <tr><td>Portfolio HTML</td><td>Page portfolio sémantique</td><td><a href="#accueil">Voir</a></td></tr>
+                        <tr><td>Site E-commerce</td><td>Maquette en cours</td><td>En cours</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="cv">
+            <h2>CV</h2>
+            <article>
+                <ol>
+                    <li><strong>2026 - GoMyCode</strong> : Formation Développement Web</li>
+                    <li><strong>2025 - Université</strong> : Licence Informatique</li>
+                    <li><strong>2024 - Stage</strong> : Assistant Développeur</li>
+                </ol>
+                <button class="btn">Télécharger mon CV (PDF)</button>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <article>
+                <form>
+                    <label>Nom complet :</label><input type="text" name="nom" placeholder="Konan Stephane" required>
+                    <label>Email :</label><input type="email" name="email" placeholder="stephane@email.com" required>
+                    <label>Téléphone :</label><input type="tel" name="telephone" placeholder="+225 ...">
+                    <label>Sujet :</label>
+                    <select name="sujet">
+                        <option>Proposition de travail</option>
+                        <option>Collaboration</option>
+                        <option>Autre</option>
+                    </select>
+                    <label>Message :</label><textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Konan Stephane - Portfolio réalisé en HTML5 Sémantique</p>
+        <p><a href="https://github.com/konanstephane830-hub" style="color:#64ffda">GitHub</a> | Abidjan, Côte d'Ivoire</p>
+    </footer>
+</body>
+</html>
